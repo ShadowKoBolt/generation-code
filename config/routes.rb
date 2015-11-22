@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
 
-  root "dashboard#index"
+  root "dashboard#tech"
 
-  get "dashboard" => "dashboard#index", as: "dashboard"
   get "tech" => "dashboard#tech", as: "tech"
   get "resources" => "dashboard#resources", as: "resources"
+  get "info" => "dashboard#org", as: "org"
+  get "logo" => "dashboard#logo", as: "logo"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
