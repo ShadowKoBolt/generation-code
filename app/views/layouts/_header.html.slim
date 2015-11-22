@@ -1,0 +1,11 @@
+= navbar do
+  = vertical do
+    = link_to t(".title"), root_path
+  = horizontal do
+    = nav class: 'navbar-left' do
+      = link_to t(".technologies"), tech_path
+      = link_to t(".resources"), resources_path
+      = link_to t(".contact"), root_path
+    = nav class: 'navbar-right' do
+      = link_to t(".login"), root_path
+      = link_to t(".register"), root_path

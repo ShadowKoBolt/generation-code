@@ -1,0 +1,194 @@
+
+.row
+  .col-sm-12
+    h1.text-center Gaming
+
+.row
+  .col-sm-12
+    p.text-center
+      | Want to make the next Minecraft or just want to learn to code in a fun,
+      |  goal driven environment? You can find all the resources you need to get
+      |  started whatever your experience level right here:
+      hr
+
+.row
+  .col-sm-12
+    h2.text-center Getting started
+
+.row
+  .col-sm-4
+    .row
+      .col-xs-12.shifted-right
+        figure.snip0013.border
+          = image_tag "minecraft_01.png"
+          div
+            a href="#" title="Send resource to someone" data-toggle="modal" data-target="#myModal"
+              i.ion-link.left-icon
+            a href="http://minemum.com/getting-started" title="View resource" target="_blank"
+              i.ion-forward.right-icon
+    .row
+      .col-xs-12.text-center
+        | Installing Minecraft
+        br
+        small Install the world's most downloaded creative game
+
+  .col-sm-4
+    .row
+      .col-xs-12.shifted-right
+        figure.snip0013.border
+          = image_tag "minecraft_02.jpg"
+          div
+            a href="#" title="Send resource to someone" data-toggle="modal" data-target="#myModal"
+              i.ion-link.left-icon
+            a href="http://minemum.com/splash" title="View resource" target="_blank"
+              i.ion-forward.right-icon
+    .row
+      .col-xs-12.text-center
+        | Customize Minecraft Greeting
+        br
+        small Personalize your game with fun messages on start up
+
+  .col-sm-4
+    .row
+      .col-xs-12.shifted-right
+        figure.snip0013.border
+          = image_tag "code_combat.jpg"
+          div
+            a href="#" title="Send resource to someone" data-toggle="modal" data-target="#myModal"
+              i.ion-link.left-icon
+            a href="http://codecombat.com" title="View resource" target="_blank"
+              i.ion-forward.right-icon
+    .row
+      .col-xs-12.text-center
+        | Code Combat
+        br
+        small Learn to code by playing a game
+
+.row
+  .col-xs-12
+    hr
+.row
+  .col-sm-12
+    h2.text-center Intermediate
+
+.row
+  .col-sm-4
+    .row
+      .col-xs-12.shifted-right
+        figure.snip0013.border
+          = image_tag "ruby_warrior.png"
+          div
+            a href="#" title="Send resource to someone" data-toggle="modal" data-target="#myModal"
+              i.ion-link.left-icon
+            a href="https://www.bloc.io/ruby-warrior#/" title="View resource" target="_blank"
+              i.ion-forward.right-icon
+    .row
+      .col-xs-12.text-center
+        | Ruby Warrior
+        br
+        small A triumphant quest of adventure, love & destiny
+
+  .col-sm-4
+    .row
+      .col-xs-12.shifted-right
+        figure.snip0013.border
+          = image_tag "flowlab.png"
+          div
+            a href="#" title="Send resource to someone" data-toggle="modal" data-target="#myModal"
+              i.ion-link.left-icon
+            a href="http://flowlab.io/video_tutorials" title="View resource" target="_blank"
+              i.ion-forward.right-icon
+    .row
+      .col-xs-12.text-center
+        | Flowlab
+        br
+        small Create simple games right in your browser
+
+  .col-sm-4
+    .row
+      .col-xs-12.shifted-right
+        figure.snip0013.border
+          = image_tag "scratch_02.png"
+          div
+            a href="#" title="Send resource to someone" data-toggle="modal" data-target="#myModal"
+              i.ion-link.left-icon
+            a href="https://scratch.mit.edu/about/" title="View resource" target="_blank"
+              i.ion-forward.right-icon
+    .row
+      .col-xs-12.text-center
+        | Scratch
+        br
+        small Interactive, in-browser story builder
+
+.row
+  .col-xs-12
+    hr
+.row
+  .col-sm-12
+    h2.text-center Advanced
+
+.row
+  .col-sm-4
+    .row
+      .col-xs-12.shifted-right
+        figure.snip0013.border
+          = image_tag "unity_space.png"
+          div
+            a href="#" title="Send resource to someone" data-toggle="modal" data-target="#myModal"
+              i.ion-link.left-icon
+            a href="https://unity3d.com/learn/tutorials/projects/space-shooter-tutorial" title="View resource" target="_blank"
+              i.ion-forward.right-icon
+    .row
+      .col-xs-12.text-center
+        | Unity Space Combat
+        br
+        small Build an arcade style space shooter
+
+  .col-sm-4
+    .row
+      .col-xs-12.shifted-right
+        figure.snip0013.border
+          = image_tag "android_02.png"
+          div
+            a href="#" title="Send resource to someone" data-toggle="modal" data-target="#myModal"
+              i.ion-link.left-icon
+            a href="http://developer.android.com/training/index.html" title="View resource" target="_blank"
+              i.ion-forward.right-icon
+    .row
+      .col-xs-12.text-center
+        | Native Android Gaming
+        br
+        small Build low level games for android devices
+
+  .col-sm-4
+    .row
+      .col-xs-12.shifted-right
+        figure.snip0013.border
+          = image_tag "matrix.jpg"
+          div
+            a href="#" title="Send resource to someone" data-toggle="modal" data-target="#myModal"
+              i.ion-link.left-icon
+            a href="http://codecombat.com" title="View resource" target="_blank"
+              i.ion-forward.right-icon
+    .row
+      .col-xs-12.text-center
+        | Vector Matrix Programming
+        br
+        small Help Neo beat Agent Smith
+
+#myModal.modal.fade aria-labelledby="myModalLabel" role="dialog" tabindex="-1"
+  .modal-dialog role="document"
+    .modal-content
+      .modal-header
+        button.close aria-label="Close" data-dismiss="modal" type="button"
+          span aria-hidden="true"  &times;
+        h4#myModalLabel.modal-title Share a resource
+      .modal-body
+        = form_tag "" do
+          .form-group
+            = label_tag :email
+            = email_field_tag :email, "", class: "form-control"
+      .modal-footer
+        button.btn.btn-default data-dismiss="modal" type="button"  Cancel
+        button.btn.btn-primary type="button" data-dismiss="modal" Send
+

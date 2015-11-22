@@ -1,0 +1,24 @@
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+@import "bootstrap-sprockets";
+
+$font-primary: "Courier New", Courier, monospace;
+$brand-primary: #3580DC;
+$headings-color: $brand-primary;
+$text-color: #757575;
+$font-size-base: 16px;
+// $brand-secondary: #f6ffc6;
+// $navbar-default-bg: $brand-primary;
+// $navbar-default-link-color: $brand-secondary;
+// $navbar-default-link-active-color: $brand-secondary;
+
+@import "bootswatch/cosmo/variables";
+@import "bootstrap";
+@import "bootswatch/cerulean/bootswatch";
+
+@import "header";
+@import "images";
+
+small {
+  opacity: 0.7;
+}
